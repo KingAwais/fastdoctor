@@ -206,9 +206,9 @@ def menu():
 	print "   \033[1;36;40m      ║\033[1;33;40m[*] ID  \033[1;34;40m: "+id+"        \033[1;36;40m║"
 	print "   \033[1;36;40m      ║\033[1;36;40m[*] Subs\033[1;34;40m: "+sub+"                      \033[1;36;40m║"
 	print "   \033[1;36;40m      ╚═════════════════════════════════╝"
-	print "\033[1;32;40m[1] \033[1;33;41mHack The World"	
-	print "\033[1;32;40m[2] \033[1;33;42mUpdate Aahil"																														
-	print "\033[1;32;40m[0] \033[1;33;43mLog out"
+	print "\033[1;32;40m[1] \036[1;33;41mHack The World"	
+	print "\033[1;32;40m[2] \034[1;34;44mUpdate Doctor Awais Cloner"																														
+	print "\033[1;32;40m[0] \035[1;32;45mLog out"
 	pilih()
 	
 def pilih():
@@ -279,7 +279,7 @@ def pilih_super():
 			print"\x1b[1;92m[✺] ID Not Found!"
 			raw_input("\n\033[1;96m[\033[1;94mBack\033[1;96m]")
 			super()
-		print"\033[1;35;40m[✺] Getting IDs..."
+		print"\035[1;35;40m[✺] Getting IDs..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
